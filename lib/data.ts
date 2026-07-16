@@ -150,7 +150,7 @@ export const projectsData: Project[] = [
 ];
 
 export const skillsList: string[] = [
-  'Figma', 'Claude / AI Tools', 'User Research', 'Usability Testing',
+  'Design Systems', 'Figma', 'Claude / AI Tools', 'User Research', 'Usability Testing',
   'A/B Testing', 'Prototyping', 'Information Architecture', 'Wireframing',
   'High-Fidelity Design', 'Interaction Design', 'Digital Marketing',
   'Product Management', 'Stakeholder Management', 'UX Writing'
