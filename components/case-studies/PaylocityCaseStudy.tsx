@@ -8,7 +8,7 @@ import Reveal from '@/components/Reveal';
 const aiCards = [
   {
     title: 'FTA Slide Deck AI',
-    body: "Selected by Toby Williams, PayLocity's CEO, to build a Claude-powered tool to assists AEs in constructing sales decks for first time appointment. Sales pitch prep time by cut by 65% by turning a manual cilent research process into an on-demand sales assistant."
+    body: "Selected by Toby Williams, PayLocity's CEO, to build a Claude-powered tool that assists AEs in constructing sales decks for first-time appointments, turning a manual client research process into an on-demand sales assistant."
   },
   {
     title: 'Playwright Smoke-Test Automation',
@@ -97,14 +97,13 @@ export default function PaylocityCaseStudy() {
       />
 
       <div style={{ background: 'var(--pink)', padding: '36px 56px', marginTop: 52 }}>
-        <div style={{ maxWidth: 1080, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(4,1fr)' }}>
+        <div style={{ maxWidth: 1080, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(3,1fr)' }}>
           {[
-            { value: '65%', label: 'Cut sales pitch prep time' },
             { value: '30%', label: 'Improved conversion rates' },
             { value: '20–30', label: 'Design flaws caught weekly' },
             { value: '55%', label: 'Faster smoke testing via Playwright' }
           ].map((m, i) => (
-            <div key={m.label} style={{ textAlign: 'center', padding: '0 24px', borderRight: i < 3 ? '1px solid rgba(255,241,208,0.2)' : 'none' }}>
+            <div key={m.label} style={{ textAlign: 'center', padding: '0 24px', borderRight: i < 2 ? '1px solid rgba(255,241,208,0.2)' : 'none' }}>
               <div style={{ fontSize: 44, fontWeight: 800, color: 'var(--cream)', lineHeight: 1, letterSpacing: '-2px', marginBottom: 6 }}>{m.value}</div>
               <div style={{ fontSize: 13, color: 'rgba(255,241,208,0.75)', lineHeight: 1.4 }}>{m.label}</div>
             </div>

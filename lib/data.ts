@@ -28,7 +28,7 @@ export const projectsData: Project[] = [
       { value: '55%', label: 'Faster smoke testing via Playwright automation' }
     ],
     bullets: [
-      "Cut sales pitch prep time 65%, selected by Paylocity's CEO to build Claude-powered AI tool",
+      "Selected by Paylocity's CEO to build Claude-powered AI tool creating customized sale decks",
       'Improved conversion rates by 30% by redesigning and A/B testing 3 core Paylocity webpages',
       'Caught 20–30 design flaws weekly via AI-driven smoke testing and QA automation'
     ]
