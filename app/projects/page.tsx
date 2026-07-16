@@ -25,7 +25,7 @@ export default function Projects() {
             <Link
               href={`/projects/${featured.id}`}
               className="proj-card"
-              style={{ display: 'grid', gridTemplateColumns: '1fr 340px', gap: 56, alignItems: 'center', padding: 40 }}
+              style={{ padding: 40 }}
             >
               <div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 18 }}>
@@ -42,14 +42,6 @@ export default function Projects() {
                     <span key={tag} className="proj-tag">{tag}</span>
                   ))}
                 </div>
-              </div>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14 }}>
-                {featured.metrics.map((m) => (
-                  <div key={m.label} className="proj-metric-box">
-                    <div className="proj-metric-value">{m.value}</div>
-                    <div className="proj-metric-label">{m.label}</div>
-                  </div>
-                ))}
               </div>
             </Link>
           </Reveal>
