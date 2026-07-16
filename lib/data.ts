@@ -19,10 +19,10 @@ export const projectsData: Project[] = [
     role: 'Website Technology & Marketing Intern',
     period: 'May 2026 – Present',
     location: 'Schaumburg, IL',
-    headline: 'Claude-powered AI tool selected by CEO; cut pitch prep time 65%',
+    headline: 'Claude-powered AI tool selected by CEO; drove 30% conversion lift',
     tags: ['AI Tools', 'Claude', 'Web Design', 'A/B Testing', 'Marketing'],
     metrics: [
-      { value: '65%', label: 'Cut sales pitch prep time through customized Claude agent' },
+      { value: 'CEO', label: 'Hand-picked to build Claude-powered AI tool' },
       { value: '30%', label: 'Improved conversion rates through Kameleeon AI testing' },
       { value: '20–30', label: 'Design & usability flaws caught weekly' },
       { value: '55%', label: 'Faster smoke testing via Playwright automation' }
