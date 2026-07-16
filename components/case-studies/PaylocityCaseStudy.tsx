@@ -101,7 +101,7 @@ export default function PaylocityCaseStudy() {
           {[
             { value: '65%', label: 'Cut sales pitch prep time' },
             { value: '30%', label: 'Improved conversion rates' },
-            { value: '5–10', label: 'Issues caught weekly via QA' },
+            { value: '20–30', label: 'Design flaws caught weekly' },
             { value: '55%', label: 'Faster smoke testing via Playwright' }
           ].map((m, i) => (
             <div key={m.label} style={{ textAlign: 'center', padding: '0 24px', borderRight: i < 3 ? '1px solid rgba(255,241,208,0.2)' : 'none' }}>
