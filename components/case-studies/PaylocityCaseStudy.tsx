@@ -12,7 +12,7 @@ const aiCards = [
   },
   {
     title: 'Playwright Smoke-Test Automation',
-    body: 'Coding Playwright scripts alongside the dev team to automate weekly smoke testing. Manual testing time was cut by 55% through developing visual regression QA testing for CTA buttons and website content.'
+    body: 'Coding Playwright scripts alongside the dev team to automate weekly smoke testing, developing visual regression QA testing for CTA buttons and website content to reduce manual testing time.'
   },
   {
     title: 'AI Tooling Landscape Research',
@@ -101,7 +101,7 @@ export default function PaylocityCaseStudy() {
           {[
             { value: '30%', label: 'Improved conversion rates' },
             { value: '20–30', label: 'Design flaws caught weekly' },
-            { value: '55%', label: 'Faster smoke testing via Playwright' }
+            { value: 'CEO', label: 'Selected to build Claude AI tool' }
           ].map((m, i) => (
             <div key={m.label} style={{ textAlign: 'center', padding: '0 24px', borderRight: i < 2 ? '1px solid rgba(255,241,208,0.2)' : 'none' }}>
               <div style={{ fontSize: 44, fontWeight: 800, color: 'var(--cream)', lineHeight: 1, letterSpacing: '-2px', marginBottom: 6 }}>{m.value}</div>

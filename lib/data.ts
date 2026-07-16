@@ -24,8 +24,7 @@ export const projectsData: Project[] = [
     metrics: [
       { value: 'CEO', label: 'Hand-picked to build Claude-powered AI tool' },
       { value: '30%', label: 'Improved conversion rates through Kameleeon AI testing' },
-      { value: '20–30', label: 'Design & usability flaws caught weekly' },
-      { value: '55%', label: 'Faster smoke testing via Playwright automation' }
+      { value: '20–30', label: 'Design & usability flaws caught weekly' }
     ],
     bullets: [
       "Selected by Paylocity's CEO to build Claude-powered AI tool creating customized sale decks",
