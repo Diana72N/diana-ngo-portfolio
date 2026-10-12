@@ -166,13 +166,6 @@ button { font: inherit; }
 }
 .btn-all-projects:hover { background: var(--maroon); }
 
-/* ───────── Skill cards (home) ───────── */
-.skill-card {
-  padding: 36px; border: 1px solid rgba(255,241,208,0.1); border-radius: 12px;
-  transition: all 0.3s;
-}
-.skill-card:hover { border-color: rgba(213,86,114,0.5); background: rgba(213,86,114,0.06); }
-
 /* ───────── Project cards ───────── */
 .proj-card {
   background: #fff; border-radius: 14px; padding: 32px; cursor: pointer;
