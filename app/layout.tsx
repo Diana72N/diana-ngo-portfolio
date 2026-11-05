@@ -1,13 +1,11 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
 import Nav from "@/components/Nav";
+import ScrollFade from "@/components/ScrollFade";
+import { fontVariables } from "@/styles/fonts";
+import "@/styles/tokens.css";
+import "@/styles/components.css";
+import "@/styles/hero-fight.css";
 import "./globals.css";
-
-const poppins = Poppins({
-  variable: "--font-poppins",
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
-});
 
 export const metadata: Metadata = {
   title: "Diana Ngo — UX Designer",
@@ -20,10 +18,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={poppins.variable}>
+    <html lang="en" className={fontVariables}>
       <body>
         <Nav />
         {children}
+        <ScrollFade />
       </body>
     </html>
   );

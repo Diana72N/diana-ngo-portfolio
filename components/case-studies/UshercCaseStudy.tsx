@@ -14,7 +14,6 @@ export default function UshercCaseStudy() {
         meta="Dec 2025 – June 2026 · Champaign, IL"
         title="H.E.R.O"
         subtitle="A nationwide privacy policy tracker across 250+ U.S. institutions."
-        titleSize={80}
         metaFields={[
           { label: 'Industry', value: 'Education & Research' },
           { label: 'Tools', value: 'Figma & FigmaMake' },
@@ -35,21 +34,21 @@ export default function UshercCaseStudy() {
         goal="Design a clear, map-driven interface for searching, filtering, and comparing 250+ institutions' archived privacy policies along with AI generated change summaries."
       />
 
-      <div style={{ background: 'var(--cream)', padding: '72px 56px' }}>
-        <div style={{ maxWidth: 1080, margin: '0 auto' }}>
+      <div className="block block--ruled">
+        <div className="container">
           <Reveal>
-            <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 3, textTransform: 'uppercase', color: 'var(--pink)', marginBottom: 14 }}>Project Scope</div>
-            <h2 style={{ fontSize: 40, fontWeight: 800, color: 'var(--maroon)', letterSpacing: '-1.5px', lineHeight: 1.05, marginBottom: 16 }}>From flowchart to full platform</h2>
-            <p style={{ fontSize: 16, color: 'var(--maroon)', opacity: 0.62, maxWidth: 640, lineHeight: 1.75, marginBottom: 56 }}>Mapped out the ideal search-and-filter journey first, then built toward a data-rich, map-driven interface researchers could trust.</p>
+            <span className="label eyebrow">Project Scope</span>
+            <h2 className="heading title">From flowchart to full platform</h2>
+            <p className="body lead cs-intro">Mapped out the ideal search-and-filter journey first, then built toward a data-rich, map-driven interface researchers could trust.</p>
           </Reveal>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 56, alignItems: 'start' }}>
+          <div className="split">
             <ImageStack
               images={[
-                { src: '/images/hero-1.png', alt: 'H.E.R.O user flow diagram', bg: '#f6f6f5' },
-                { src: '/images/hero-2.png', alt: 'H.E.R.O landing & onboarding screen', bg: '#f4f4f4' },
-                { src: '/images/hero-3.png', alt: 'H.E.R.O interactive map dashboard', bg: '#0d1b2e' },
-                { src: '/images/hero-4.png', alt: 'H.E.R.O archive viewer with AI summary', bg: '#fff' }
+                { src: '/images/hero-1.png', alt: 'H.E.R.O user flow diagram' },
+                { src: '/images/hero-2.png', alt: 'H.E.R.O landing & onboarding screen' },
+                { src: '/images/hero-3.png', alt: 'H.E.R.O interactive map dashboard' },
+                { src: '/images/hero-4.png', alt: 'H.E.R.O archive viewer with AI summary' }
               ]}
             />
 
@@ -87,7 +86,7 @@ export default function UshercCaseStudy() {
         ]}
       />
 
-      <CaseStudyCTA dark />
+      <CaseStudyCTA />
     </div>
   );
 }

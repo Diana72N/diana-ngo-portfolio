@@ -1,0 +1,55 @@
+/* Ringside design tokens — single source of truth. Import once, globally. */
+:root {
+  /* Color — 60 / 30 / 10 */
+  --sand: #d6cab1;        /* 60%  page background */
+  --cream: #f4efe6;       /* 30%  cards, nav, panels, ticker */
+  --navy: #14155b;        /* 10%  accent: buttons, links, tags, focus */
+  --navy-hover: #2a2c86;  /* hover/pressed for navy only */
+  --ink: #1d1b1a;         /* headings + body text, borders, hard shadows */
+  --ink-muted: #4f473e;   /* captions, metadata (5.6:1 on sand) */
+  --taupe: #b9ab8f;       /* decorative dividers on sand only — never text */
+
+  /* Type families (set by next/font in fonts.ts; fallbacks here) */
+  --font-display: var(--font-jersey, "Jersey 10"), "IBM Plex Mono", ui-monospace, monospace;
+  --font-mono: var(--font-plex-mono, "IBM Plex Mono"), ui-monospace, Menlo, monospace;
+
+  /* Spacing — 8px rhythm */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 40px;
+  --space-6: 64px;   /* section padding, mobile */
+  --space-7: 96px;   /* section padding, desktop */
+
+  /* Shape */
+  --radius-none: 0;
+  --radius-sm: 2px;  /* tags, inputs */
+  --radius-md: 4px;  /* game frame, thumbnails */
+  --border-thin: 2px;
+  --border-thick: 3px;
+
+  /* Hard shadows — never blurred */
+  --shadow-card: 6px 6px 0 #1d1b1a;
+  --shadow-card-hover: 8px 8px 0 #14155b;
+  --shadow-button: 3px 3px 0 #1d1b1a;
+  --shadow-accent: 4px 4px 0 #14155b;  /* highlighted panel (navy border) */
+
+  /* Layout */
+  --content-max: 1200px;
+  --gutter: 24px;
+}
+
+@media (max-width: 600px) {
+  :root { --gutter: 16px; }
+}
+
+/* Type styles */
+.display-xl { font-family: var(--font-display); font-size: clamp(56px, 7vw, 88px); line-height: .92; letter-spacing: .01em; font-weight: 400; }
+.display-lg { font-family: var(--font-display); font-size: clamp(40px, 5vw, 56px); line-height: 1; letter-spacing: .01em; font-weight: 400; }
+.heading    { font-family: var(--font-display); font-size: 36px; line-height: 1.05; letter-spacing: .01em; font-weight: 400; }
+.subheading { font-family: var(--font-display); font-size: 26px; line-height: 1.1; letter-spacing: .02em; font-weight: 400; }
+.body-lg    { font-family: var(--font-mono); font-size: 18px; line-height: 30px; }
+.body       { font-family: var(--font-mono); font-size: 16px; line-height: 27px; }
+.body-sm    { font-family: var(--font-mono); font-size: 14px; line-height: 22px; }
+.label      { font-family: var(--font-mono); font-size: 12px; line-height: 16px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }

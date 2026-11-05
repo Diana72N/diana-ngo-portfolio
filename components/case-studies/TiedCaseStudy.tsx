@@ -15,7 +15,6 @@ export default function TiedCaseStudy() {
         meta="Jun 2025 – Aug 2025 · San Francisco, CA"
         title="Tied"
         subtitle="Designed a compatibility feature that turns swiping into something worth sharing."
-        titleSize={80}
         metaFields={[
           { label: 'Industry', value: 'Dating & Social' },
           { label: 'Tools', value: 'Figma' },
@@ -36,21 +35,21 @@ export default function TiedCaseStudy() {
         goal="Design a playful, shareable “Relationship Roast” flow that's honest and a little cheeky, built for two players and a Gen Z sense of humor."
       />
 
-      <div style={{ background: 'var(--cream)', padding: '72px 56px' }}>
-        <div style={{ maxWidth: 1080, margin: '0 auto' }}>
+      <div className="block block--ruled">
+        <div className="container">
           <Reveal>
-            <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 3, textTransform: 'uppercase', color: 'var(--pink)', marginBottom: 14 }}>Project Scope</div>
-            <h2 style={{ fontSize: 40, fontWeight: 800, color: 'var(--maroon)', letterSpacing: '-1.5px', lineHeight: 1.05, marginBottom: 16 }}>From sketch to sign-off</h2>
-            <p style={{ fontSize: 16, color: 'var(--maroon)', opacity: 0.62, maxWidth: 640, lineHeight: 1.75, marginBottom: 56 }}>Investigated which hooks captivated users to proceed through the app&apos;s compatibility evaluation, and what user flows felt most natural.</p>
+            <span className="label eyebrow">Project Scope</span>
+            <h2 className="heading title">From sketch to sign-off</h2>
+            <p className="body lead cs-intro">Investigated which hooks captivated users to proceed through the app&apos;s compatibility evaluation, and what user flows felt most natural.</p>
           </Reveal>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 56, alignItems: 'start' }}>
+          <div className="split">
             <ImageStack
               images={[
-                { src: '/images/tied-1.png', alt: 'Tied paper wireframes — screen flow', bg: '#fff' },
-                { src: '/images/tied-2.png', alt: 'Tied paper wireframes — results & scale', bg: '#fff' },
-                { src: '/images/tied-3.png', alt: 'Tied affinity mapping in Figma', bg: '#fff' },
-                { src: '/images/tied-4.png', alt: 'Tied high-fidelity prototype screens', bg: '#111' }
+                { src: '/images/tied-1.png', alt: 'Tied paper wireframes — screen flow' },
+                { src: '/images/tied-2.png', alt: 'Tied paper wireframes — results & scale' },
+                { src: '/images/tied-3.png', alt: 'Tied affinity mapping in Figma' },
+                { src: '/images/tied-4.png', alt: 'Tied high-fidelity prototype screens' }
               ]}
             />
 
@@ -82,13 +81,13 @@ export default function TiedCaseStudy() {
         title="Fast-paced, hands-on growth."
         paragraph="Being a UX design intern at Tied, I gained an abundant amount of experience on this mini project. I learned to adapt to the fast-paced momentum in a start-up environment, given 4 weeks to complete the project, and developed key communication skills through constant updates to the founder, lead designers, and engineers throughout the entire design process."
         rightContent={
-          <div style={{ borderRadius: 14, overflow: 'hidden', boxShadow: '0 16px 44px rgba(72,22,32,0.16)', border: '1px solid rgba(72,22,32,0.06)', width: '100%', aspectRatio: '16/9', position: 'relative' }}>
-            <Image src="/images/tied-outcome.png" alt="Tied app splash screen with Get Started button" fill sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: 'cover', objectPosition: 'center calc(50% + 19px)' }} />
+          <div className="frame frame--wide">
+            <Image src="/images/tied-outcome.png" alt="Tied app splash screen with Get Started button" fill sizes="(max-width: 768px) 100vw, 50vw" style={{ objectPosition: 'center calc(50% + 19px)' }} />
           </div>
         }
       />
 
-      <CaseStudyCTA dark />
+      <CaseStudyCTA />
     </div>
   );
 }

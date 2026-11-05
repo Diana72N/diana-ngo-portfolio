@@ -28,20 +28,20 @@ export default function CostcoCaseStudy() {
         goal="Redesign Costco's core app flows around a clear design system, making shopping, services, and account management feel simple."
       />
 
-      <div style={{ background: 'var(--cream)', padding: '72px 56px' }}>
-        <div style={{ maxWidth: 1080, margin: '0 auto' }}>
+      <div className="block block--ruled">
+        <div className="container">
           <Reveal>
-            <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 3, textTransform: 'uppercase', color: 'var(--pink)', marginBottom: 14 }}>Project Scope</div>
-            <h2 style={{ fontSize: 40, fontWeight: 800, color: 'var(--maroon)', letterSpacing: '-1.5px', lineHeight: 1.05, marginBottom: 16 }}>From sketch to system to screens</h2>
-            <p style={{ fontSize: 16, color: 'var(--maroon)', opacity: 0.62, maxWidth: 640, lineHeight: 1.75, marginBottom: 56 }}>A semester-long redesign from August 2025 - December 2025</p>
+            <span className="label eyebrow">Project Scope</span>
+            <h2 className="heading title">From sketch to system to screens</h2>
+            <p className="body lead cs-intro">A semester-long redesign from August 2025 - December 2025</p>
           </Reveal>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 56, alignItems: 'start' }}>
+          <div className="split">
             <ImageStack
               images={[
-                { src: '/images/costco-1.png', alt: 'Paper wireframes and flow sketches for the Costco app redesign', bg: '#000' },
-                { src: '/images/costco-2.png', alt: 'High-fidelity item, cart, and account screens', bg: '#111' },
-                { src: '/images/costco-3.png', alt: 'Costco design system — colors, type, and components', bg: '#f2f2f2' }
+                { src: '/images/costco-1.png', alt: 'Paper wireframes and flow sketches for the Costco app redesign' },
+                { src: '/images/costco-2.png', alt: 'High-fidelity item, cart, and account screens' },
+                { src: '/images/costco-3.png', alt: 'Costco design system — colors, type, and components' }
               ]}
             />
 
@@ -77,7 +77,7 @@ export default function CostcoCaseStudy() {
         ]}
       />
 
-      <CaseStudyCTA dark />
+      <CaseStudyCTA />
     </div>
   );
 }

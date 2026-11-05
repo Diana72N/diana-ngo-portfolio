@@ -3,19 +3,13 @@ import Reveal from './Reveal';
 import TimelineBadge from './TimelineBadge';
 
 export function TimelineList({ children }: { children: ReactNode }) {
-  return (
-    <div style={{ position: 'relative', paddingLeft: 58 }}>
-      <div style={{ position: 'absolute', left: 17, top: 6, bottom: 6, width: 2, background: 'rgba(72,22,32,0.15)' }} />
-      {children}
-    </div>
-  );
+  return <div className="timeline">{children}</div>;
 }
 
 export function TimelineStep({
   number,
   title,
   children,
-  last = false,
   marginBottom = 64
 }: {
   number: number;
@@ -24,11 +18,12 @@ export function TimelineStep({
   last?: boolean;
   marginBottom?: number;
 }) {
+  // The gap lines each step up with its screenshot on desktop; CSS collapses it when stacked.
   return (
-    <Reveal style={{ position: 'relative', marginBottom: last ? 0 : marginBottom }}>
-      <TimelineBadge number={number} last={last} />
-      <div style={{ fontSize: 20, fontWeight: 700, color: 'var(--maroon)', marginBottom: 8 }}>{title}</div>
-      <p style={{ fontSize: 15, color: 'var(--maroon)', opacity: 0.65, lineHeight: 1.7 }}>{children}</p>
+    <Reveal className="timeline__step" style={{ '--step-gap': `${marginBottom}px` } as React.CSSProperties}>
+      <TimelineBadge number={number} />
+      <h3 className="subheading timeline__title">{title}</h3>
+      <p className="body-sm muted">{children}</p>
     </Reveal>
   );
 }

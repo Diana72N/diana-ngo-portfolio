@@ -14,7 +14,6 @@ export default function AccessibilityCaseStudy() {
         meta="Aug 2025 – Dec 2025 · Champaign, IL"
         title={<>Accessibility<br />Games</>}
         subtitle="Interactive resource pages teaching cognitive, visual, and hearing accessibility, designed to be felt, not just read."
-        titleSize={72}
         metaFields={[
           { label: 'Advised By', value: 'Prof. Adler & Dr. Klentenik' },
           { label: 'Tools', value: 'Figma, FigmaMake & AI' },
@@ -35,20 +34,20 @@ export default function AccessibilityCaseStudy() {
         goal="Design 6 resource pages that make cognitive, visual, and hearing accessibility genuinely understandable, through interaction, not just text."
       />
 
-      <div style={{ background: 'var(--cream)', padding: '72px 56px' }}>
-        <div style={{ maxWidth: 1080, margin: '0 auto' }}>
+      <div className="block block--ruled">
+        <div className="container">
           <Reveal>
-            <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 3, textTransform: 'uppercase', color: 'var(--pink)', marginBottom: 14 }}>Project Scope</div>
-            <h2 style={{ fontSize: 40, fontWeight: 800, color: 'var(--maroon)', letterSpacing: '-1.5px', lineHeight: 1.05, marginBottom: 16 }}>From research to resource pages</h2>
-            <p style={{ fontSize: 16, color: 'var(--maroon)', opacity: 0.62, maxWidth: 640, lineHeight: 1.75, marginBottom: 56 }}>Every page had to translate real accessibility research into something a UIUC student could understand in seconds.</p>
+            <span className="label eyebrow">Project Scope</span>
+            <h2 className="heading title">From research to resource pages</h2>
+            <p className="body lead cs-intro">Every page had to translate real accessibility research into something a UIUC student could understand in seconds.</p>
           </Reveal>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 56, alignItems: 'start' }}>
+          <div className="split">
             <ImageStack
               images={[
-                { src: '/images/a11y-1.png', alt: 'Color blindness carousel component variations', bg: '#fff' },
-                { src: '/images/a11y-2.png', alt: 'Scoreboard results page showing player vs computer rounds', bg: '#fff' },
-                { src: '/images/a11y-3.png', alt: 'Improving Accessibility for Deafness resource page', bg: '#fff' }
+                { src: '/images/a11y-1.png', alt: 'Color blindness carousel component variations' },
+                { src: '/images/a11y-2.png', alt: 'Scoreboard results page showing player vs computer rounds' },
+                { src: '/images/a11y-3.png', alt: 'Improving Accessibility for Deafness resource page' }
               ]}
             />
 
@@ -86,7 +85,7 @@ export default function AccessibilityCaseStudy() {
         ]}
       />
 
-      <CaseStudyCTA dark />
+      <CaseStudyCTA />
     </div>
   );
 }

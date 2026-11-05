@@ -14,7 +14,6 @@ export default function UltraAICaseStudy() {
         meta="Jan 2025 – Apr 2025 · San Francisco, CA"
         title="Ultra"
         subtitle="Led design of website & mobile app to improve user flow & increase click-through rates."
-        titleSize={80}
         metaFields={[
           { label: 'Industry', value: 'Technology + AI' },
           { label: 'Tools', value: 'Figma & Webflow' },
@@ -35,15 +34,15 @@ export default function UltraAICaseStudy() {
         goal="Design a simplistic, welcoming interface that drives student engagement, increases sign-ups, and launches successfully on iOS, all within 4 months at a fast-paced startup."
       />
 
-      <div style={{ background: 'var(--cream)', padding: '72px 56px' }}>
-        <div style={{ maxWidth: 1080, margin: '0 auto' }}>
+      <div className="block block--ruled">
+        <div className="container">
           <Reveal>
-            <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 3, textTransform: 'uppercase', color: 'var(--pink)', marginBottom: 14 }}>Project Scope</div>
-            <h2 style={{ fontSize: 40, fontWeight: 800, color: 'var(--maroon)', letterSpacing: '-1.5px', lineHeight: 1.05, marginBottom: 16 }}>From research to launch</h2>
-            <p style={{ fontSize: 16, color: 'var(--maroon)', opacity: 0.62, maxWidth: 640, lineHeight: 1.75, marginBottom: 56 }}>The initial research focused on how to engage the high school audience and define a launch strategy within the educational market.</p>
+            <span className="label eyebrow">Project Scope</span>
+            <h2 className="heading title">From research to launch</h2>
+            <p className="body lead cs-intro">The initial research focused on how to engage the high school audience and define a launch strategy within the educational market.</p>
           </Reveal>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 56, alignItems: 'start' }}>
+          <div className="split">
             <ImageStack
               images={[
                 { src: 'https://static.wixstatic.com/media/8687da_cc5997782cf048e7abbd97a555cf633b~mv2.png', alt: 'Ultra onboarding flow research', external: true },
@@ -80,7 +79,6 @@ export default function UltraAICaseStudy() {
         eyebrow="Outcomes"
         title="Shipped. Scaled. Measured."
         paragraph=""
-        bg="var(--cream)"
         cta={{ href: 'https://useultra.ai/', label: 'View Live Website ↗' }}
         stats={[
           { value: '2×', label: 'Webpage visits & account sign-ups through design collaboration with stakeholders' },
@@ -89,7 +87,7 @@ export default function UltraAICaseStudy() {
         ]}
       />
 
-      <CaseStudyCTA dark />
+      <CaseStudyCTA />
     </div>
   );
 }
